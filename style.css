@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Happy+Monkey&display=swap');
+*, *::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bodyBackground-color : hsl(217, 19%, 24%);
+    --quoteContBackground-color: hsl(217, 19%, 38%);
+    --buttonBackground-color: hsl(218, 23%, 16%);
+}
+.mainBody{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--buttonBackground-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quotesGenerator{
+    width: 35vw;
+    height: 40vh;
+    background-color: var(--bodyBackground-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#adviceNo{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+    color: hsl(150, 100%, 66%);
+    margin-top: -2rem;
+    position: absolute;
+    top: 3rem;
+}
+#adviceQuote{
+    font-family: 'Happy Monkey', cursive;
+    font-size: 25px;
+    font-weight: 800;
+    color: hsl(193, 38%, 86%);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+#divider{
+    position: absolute;
+    bottom: 3rem;
+}
+
+.diceRadius{
+    width: 3rem;
+    height: 3rem;
+    background-color: hsl(150, 100%, 66%);
+    position: absolute;
+    bottom: -22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.diceRadius:hover{
+    box-shadow: -2px 0px 18px 2px hsl(150deg 100% 66%);;
+}
+#dice{
+    position: absolute;
+    cursor: pointer;
+    }
